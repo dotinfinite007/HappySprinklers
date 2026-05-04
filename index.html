@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Happy Sprinklers | Sprinkler Repair & Maintenance — The Woodlands, TX</title>
 <meta name="description" content="The Woodlands' trusted sprinkler repair & maintenance pros. TCEQ licensed, same-day scheduling, Rachio smart upgrades. Book your free visit today.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -603,6 +603,7 @@ footer{background:var(--p900);padding:52px 0 0;}
   background:var(--p900);
   border-top:1px solid rgba(255,255,255,.08);
   padding:10px 16px;gap:10px;
+  padding-bottom:calc(10px + env(safe-area-inset-bottom));
 }
 .sticky-call{
   flex:1;background:var(--g600);color:var(--white);
@@ -742,7 +743,7 @@ footer{background:var(--p900);padding:52px 0 0;}
             <span class="hero-rating-text"><strong>5.0 on Google</strong> · Replace with your review count</span>
           </div>
           <div class="hero-btns">
-            <a class="btn-pri" href="tel:8325550192" style="display:inline-flex;align-items:center;gap:8px;">
+            <a class="btn-pri" href="tel:8325550192" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;">
               <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>Call Now
             </a>
             <button class="btn-out" onclick="scrollTo('booking')">Book a Free Visit</button>
