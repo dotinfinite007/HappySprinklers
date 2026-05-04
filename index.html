@@ -70,6 +70,13 @@ nav{
   transition:background .15s,transform .1s;
 }
 .nav-cta:hover{background:var(--p700);transform:translateY(-1px);}
+.nav-out{
+  border:1px solid rgba(175,169,236,.3);color:var(--white);
+  font-size:13px;font-weight:500;
+  padding:7px 16px;border-radius:50px;background:transparent;
+  transition:all .15s;cursor:pointer;
+}
+.nav-out:hover{border-color:rgba(175,169,236,.6);background:rgba(175,169,236,.05);}
 .hamburger{
   display:none;background:none;border:none;
   color:var(--p300);padding:8px;
@@ -701,7 +708,7 @@ footer{background:var(--p900);padding:52px 0 0;}
       <button class="nav-link" onclick="scrollTo('about')">About</button>
     </div>
     <div class="nav-right">
-      <button class="nav-phone" onclick="scrollTo('booking')" style="background:transparent;border:none;font-size:13px;font-weight:500;padding:0;cursor:pointer;">Get a quote</button>
+      <button class="nav-out" onclick="scrollTo('booking')">Get a quote</button>
       <a class="nav-cta" href="tel:+18326107302" style="display:flex;align-items:center;gap:6px;text-decoration:none;">
         <svg width="13" height="13" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>
         Call Now
