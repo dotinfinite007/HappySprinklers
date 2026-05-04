@@ -77,6 +77,31 @@ nav{
   transition:all .15s;cursor:pointer;
 }
 .nav-out:hover{border-color:rgba(175,169,236,.6);background:rgba(175,169,236,.05);}
+
+/* Hero Services Card */
+.hero-svc-card{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;padding:32px;
+  backdrop-filter:blur(10px);
+}
+.hero-svc-title{font-size:18px;font-weight:600;color:var(--white);margin-bottom:24px;}
+.hero-svc-list{display:grid;gap:16px;}
+.hero-svc-item{
+  display:flex;align-items:center;gap:16px;
+  background:rgba(255,255,255,.03);
+  padding:16px;border-radius:16px;
+  transition:transform .2s,background .2s;
+  text-decoration:none;
+}
+.hero-svc-item:hover{transform:translateX(4px);background:rgba(255,255,255,.06);}
+.hero-svc-icon{
+  width:40px;height:40px;border-radius:12px;
+  background:var(--p500);display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.hero-svc-text{font-size:15px;font-weight:500;color:var(--p100);}
+.hero-svc-sub{font-size:13px;color:var(--p300);margin-top:2px;}
 .hamburger{
   display:none;background:none;border:none;
   color:var(--p300);padding:8px;
@@ -694,9 +719,16 @@ footer{background:var(--p900);padding:52px 0 0;}
   <div class="nav-inner">
     <div class="nav-brand" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})">
       <div class="nav-brand-icon">
-        <svg width="18" height="18" viewBox="0 0 32 32" fill="none">
-          <path d="M16 4C10 4 6 9 6 14c0 7 10 14 10 14s10-7 10-14c0-5-4-10-10-10z" stroke="#AFA9EC" stroke-width="1.8" fill="none"/>
-          <circle cx="16" cy="14" r="3.5" stroke="#AFA9EC" stroke-width="1.6" fill="none"/>
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+          <defs>
+            <linearGradient id="logoGrad" x1="16" y1="8" x2="16" y2="27" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="var(--p300)"/>
+              <stop offset="100%" stop-color="var(--p600)"/>
+            </linearGradient>
+          </defs>
+          <path d="M6 24C6 14.0589 14.0589 6 24 6" stroke="var(--p300)" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+          <path d="M16 8C16 8 9 16 9 20C9 23.866 12.134 27 16 27C19.866 27 23 23.866 23 20C23 16 16 8 16 8Z" fill="url(#logoGrad)"/>
+          <path d="M14 22C14.5 23 17.5 23 18 22" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
         </svg>
       </div>
       <div class="nav-brand-text">Happy <span>Sprinklers</span></div>
@@ -763,24 +795,45 @@ footer{background:var(--p900);padding:52px 0 0;}
           </div>
         </div>
         <div class="hero-right">
-          <div class="hero-proof-card">
-            <div class="hero-proof-title">What neighbors are saying</div>
-            <div class="proof-tcard">
-              <div class="proof-stars">★★★★★</div>
-              <p class="proof-quote">"Showed up same day, fixed three broken heads and realigned two zones. Best sprinkler company I've used in The Woodlands."</p>
-              <div class="proof-author">— Sarah Jenkins · The Woodlands, TX</div>
-            </div>
-            <div class="proof-tcard">
-              <div class="proof-stars">★★★★★</div>
-              <p class="proof-quote">"The Happy Plan has been worth every penny. My lawn has never looked better and I haven't had a single surprise bill."</p>
-              <div class="proof-author">— Mark Robinson · Spring, TX</div>
-            </div>
-            <div class="proof-divider"></div>
-            <div class="proof-badge-row">
-              <span class="proof-badge">TCEQ Licensed</span>
-              <span class="proof-badge">Rachio Certified</span>
-              <span class="proof-badge">Insured</span>
-              <span class="proof-badge">No contracts</span>
+          <div class="hero-svc-card">
+            <div class="hero-svc-title">Core Services</div>
+            <div class="hero-svc-list">
+              <div class="hero-svc-item">
+                <div class="hero-svc-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77z"/></svg>
+                </div>
+                <div>
+                  <div class="hero-svc-text">Fast Repairs</div>
+                  <div class="hero-svc-sub">Broken heads, leaks & valves</div>
+                </div>
+              </div>
+              <div class="hero-svc-item">
+                <div class="hero-svc-icon" style="background:var(--g600);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                </div>
+                <div>
+                  <div class="hero-svc-text">System Tune-Ups</div>
+                  <div class="hero-svc-sub">Coverage & efficiency check</div>
+                </div>
+              </div>
+              <div class="hero-svc-item">
+                <div class="hero-svc-icon" style="background:#5B97FB;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                </div>
+                <div>
+                  <div class="hero-svc-text">Smart Upgrades</div>
+                  <div class="hero-svc-sub">Rachio wifi controllers</div>
+                </div>
+              </div>
+              <div class="hero-svc-item">
+                <div class="hero-svc-icon" style="background:var(--p700);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <div>
+                  <div class="hero-svc-text">Monthly Maintenance</div>
+                  <div class="hero-svc-sub">The Woodlands "Happy Plan"</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1231,7 +1284,12 @@ footer{background:var(--p900);padding:52px 0 0;}
       <div>
         <div class="footer-logo-row">
           <div class="footer-logo-icon">
-            <svg width="16" height="16" viewBox="0 0 32 32" fill="none"><path d="M16 4C10 4 6 9 6 14c0 7 10 14 10 14s10-7 10-14c0-5-4-10-10-10z" stroke="#AFA9EC" stroke-width="1.8" fill="none"/><circle cx="16" cy="14" r="3.5" stroke="#AFA9EC" stroke-width="1.6" fill="none"/></svg>
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <use href="#logoGrad"/>
+              <path d="M6 24C6 14.0589 14.0589 6 24 6" stroke="var(--p300)" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+              <path d="M16 8C16 8 9 16 9 20C9 23.866 12.134 27 16 27C19.866 27 23 23.866 23 20C23 16 16 8 16 8Z" fill="url(#logoGrad)"/>
+              <path d="M14 22C14.5 23 17.5 23 18 22" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+            </svg>
           </div>
           <span class="footer-logo-text">Happy Sprinklers</span>
         </div>
