@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Sprinklers | Sprinkler Repair & Maintenance — The Woodlands, TX</title>
+<meta name="description" content="The Woodlands' trusted sprinkler repair & maintenance pros. TCEQ licensed, same-day scheduling, Rachio smart upgrades. Book your free visit today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --p900:#26215C;--p800:#2E2870;--p700:#534AB7;--p500:#7F77DD;--p300:#AFA9EC;--p100:#CECBF6;--p50:#EEEDFE;
+  --g600:#1D9E75;--g400:#2DBF8E;--g50:#E1F5EE;--g900:#085041;
+  --a600:#BA7517;
+  --gray900:#2C2C2A;--gray700:#5F5E5A;--gray500:#888780;--gray200:#D3D1C7;--gray100:#E8E6DF;--gray50:#F1EFE8;
+  --warm:#F5F4F0;
+  --white:#FFFFFF;
+  --rsm:6px;--rmd:10px;--rlg:16px;--rxl:24px;
+  --fd:'DM Serif Display',Georgia,serif;
+  --fb:'DM Sans',sans-serif;
+  --shadow-sm:0 1px 3px rgba(38,33,92,.08);
+  --shadow-md:0 4px 18px rgba(38,33,92,.12);
+  --shadow-lg:0 8px 32px rgba(38,33,92,.16);
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--fb);font-size:16px;color:var(--gray900);background:var(--warm);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+button{cursor:pointer;font-family:var(--fb);}
+img{max-width:100%;display:block;}
+.container{max-width:1100px;margin:0 auto;padding:0 28px;}
+
+/* ── NAVBAR ─────────────────────────────────────────────── */
+nav{
+  background:var(--p900);
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 1px 0 rgba(255,255,255,.06);
+}
+.nav-inner{
+  max-width:1100px;margin:0 auto;padding:0 28px;
+  display:flex;align-items:center;justify-content:space-between;height:64px;
+}
+.nav-brand{display:flex;align-items:center;gap:10px;cursor:pointer;}
+.nav-brand-icon{
+  width:34px;height:34px;border-radius:var(--rmd);
+  background:rgba(127,119,221,.2);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.nav-brand-text{color:var(--white);font-size:16px;font-weight:500;letter-spacing:-.2px;}
+.nav-brand-text span{color:var(--p300);font-weight:300;}
+.nav-links{display:flex;gap:2px;align-items:center;}
+.nav-link{
+  color:var(--p300);font-size:13px;padding:7px 12px;
+  border-radius:var(--rsm);background:transparent;border:none;
+  transition:background .15s,color .15s;cursor:pointer;
+}
+.nav-link:hover{background:rgba(255,255,255,.08);color:var(--white);}
+.nav-right{display:flex;align-items:center;gap:10px;}
+.nav-phone{
+  color:var(--p300);font-size:13px;font-weight:500;
+  display:flex;align-items:center;gap:6px;
+  transition:color .15s;
+}
+.nav-phone:hover{color:var(--white);}
+.nav-cta{
+  background:var(--p500);color:var(--white);
+  font-size:13px;font-weight:500;
+  padding:8px 18px;border-radius:50px;border:none;
+  transition:background .15s,transform .1s;
+}
+.nav-cta:hover{background:var(--p700);transform:translateY(-1px);}
+.hamburger{
+  display:none;background:none;border:none;
+  color:var(--p300);padding:8px;
+  flex-direction:column;gap:5px;
+  min-width:44px;min-height:44px;
+  align-items:center;justify-content:center;
+}
+.hamburger span{
+  display:block;width:20px;height:2px;
+  background:var(--p300);border-radius:2px;
+  transition:all .3s;
+}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+.mob-menu{
+  display:none;
+  background:var(--p900);
+  border-top:1px solid rgba(255,255,255,.06);
+  position:fixed;top:64px;left:0;right:0;
+  z-index:99;padding:8px 0 16px;
+  flex-direction:column;
+}
+.mob-menu.open{display:flex;}
+.mob-menu a,.mob-menu button{
+  color:var(--p300);font-size:15px;font-weight:500;
+  padding:13px 28px;text-align:left;
+  background:none;border:none;width:100%;
+  border-bottom:1px solid rgba(255,255,255,.04);
+  transition:color .15s,background .15s;
+  cursor:pointer;
+}
+.mob-menu a:hover,.mob-menu button:hover{color:var(--white);background:rgba(255,255,255,.04);}
+.mob-menu .mob-cta{
+  margin:12px 20px 0;
+  background:var(--p500);color:var(--white);
+  border-radius:50px;text-align:center;padding:13px 20px;
+  font-weight:500;border:none;width:auto;border-bottom:none;
+}
+.mob-menu .mob-cta:hover{background:var(--p700);}
+
+/* ── HERO ────────────────────────────────────────────────── */
+.hero{
+  background:var(--p900);
+  padding:92px 0 80px;
+  position:relative;overflow:hidden;
+}
+.hero-glow1{position:absolute;top:-120px;right:-60px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(127,119,221,.18) 0%,transparent 68%);pointer-events:none;}
+.hero-glow2{position:absolute;bottom:-80px;left:-60px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.12) 0%,transparent 70%);pointer-events:none;}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.hero-left{}
+.hero-eyebrow{
+  font-size:11px;font-weight:600;color:var(--p500);
+  text-transform:uppercase;letter-spacing:.14em;
+  margin-bottom:18px;display:flex;align-items:center;gap:10px;
+  opacity:0;animation:fadeUp .6s ease .1s forwards;
+}
+.hero-eyebrow::before{content:'';display:block;width:20px;height:2px;background:var(--p500);}
+.hero-h1{
+  font-family:var(--fd);
+  font-size:clamp(38px,4.5vw,58px);
+  color:var(--white);line-height:1.07;
+  margin-bottom:20px;letter-spacing:-.3px;
+  opacity:0;animation:fadeUp .6s ease .18s forwards;
+}
+.hero-h1 em{color:var(--p300);font-style:italic;}
+.hero-sub{
+  font-size:16px;color:var(--p300);
+  max-width:460px;line-height:1.7;
+  margin-bottom:10px;font-weight:300;
+  opacity:0;animation:fadeUp .6s ease .26s forwards;
+}
+.hero-urgency{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(29,158,117,.12);
+  border:1px solid rgba(29,158,117,.25);
+  border-radius:50px;padding:7px 14px;
+  margin-bottom:28px;
+  opacity:0;animation:fadeUp .6s ease .3s forwards;
+}
+.urgency-dot{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--g600);flex-shrink:0;
+  box-shadow:0 0 0 0 rgba(29,158,117,.4);
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(29,158,117,.4);}
+  70%{box-shadow:0 0 0 8px rgba(29,158,117,0);}
+  100%{box-shadow:0 0 0 0 rgba(29,158,117,0);}
+}
+.urgency-text{font-size:12px;color:var(--g400);font-weight:500;}
+.hero-btns{
+  display:flex;gap:10px;flex-wrap:wrap;
+  margin-bottom:32px;
+  opacity:0;animation:fadeUp .6s ease .34s forwards;
+}
+.btn-pri{
+  background:var(--p500);color:var(--white);
+  font-size:15px;font-weight:500;
+  padding:13px 26px;border-radius:50px;border:none;
+  transition:background .15s,transform .12s,box-shadow .15s;
+  box-shadow:0 4px 14px rgba(127,119,221,.38);
+  white-space:nowrap;
+}
+.btn-pri:hover{background:var(--p700);transform:translateY(-2px);box-shadow:0 6px 22px rgba(127,119,221,.48);}
+.btn-out{
+  background:transparent;color:var(--p300);
+  font-size:15px;padding:13px 26px;
+  border-radius:50px;border:1px solid rgba(127,119,221,.4);
+  transition:border-color .15s,color .15s,background .15s;
+  white-space:nowrap;
+}
+.btn-out:hover{border-color:var(--p300);color:var(--white);background:rgba(255,255,255,.05);}
+.hero-rating{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:20px;
+  opacity:0;animation:fadeUp .6s ease .38s forwards;
+}
+.hero-stars{color:var(--a600);font-size:15px;letter-spacing:2px;}
+.hero-rating-text{font-size:12px;color:#6B6A9A;}
+.hero-rating-text strong{color:var(--p300);}
+.trust-row{
+  display:flex;gap:20px;flex-wrap:wrap;
+  opacity:0;animation:fadeUp .6s ease .42s forwards;
+}
+.trust-item{font-size:12px;color:#6B6A9A;display:flex;align-items:center;gap:7px;}
+.trust-dot{width:4px;height:4px;border-radius:50%;background:var(--p500);flex-shrink:0;}
+
+/* Hero right — inline mini social proof card */
+.hero-right{
+  opacity:0;animation:fadeUp .6s ease .28s forwards;
+}
+.hero-proof-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--rxl);padding:28px;
+  backdrop-filter:blur(12px);
+}
+.hero-proof-title{
+  font-size:11px;font-weight:600;color:var(--p300);
+  text-transform:uppercase;letter-spacing:.1em;
+  margin-bottom:18px;
+}
+.proof-tcard{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--rlg);padding:16px;
+  margin-bottom:10px;
+}
+.proof-tcard:last-of-type{margin-bottom:0;}
+.proof-stars{color:var(--a600);font-size:12px;letter-spacing:2px;margin-bottom:7px;}
+.proof-quote{font-size:13px;color:var(--p100);line-height:1.6;font-style:italic;font-family:var(--fd);margin-bottom:8px;}
+.proof-author{font-size:11px;color:#6B6A9A;font-weight:500;}
+.proof-divider{height:1px;background:rgba(255,255,255,.06);margin:16px 0;}
+.proof-badge-row{display:flex;gap:8px;flex-wrap:wrap;}
+.proof-badge{
+  font-size:11px;font-weight:600;
+  padding:4px 10px;border-radius:50px;
+  background:rgba(127,119,221,.15);
+  border:1px solid rgba(127,119,221,.25);
+  color:var(--p300);
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(18px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* ── STATS BAR ───────────────────────────────────────────── */
+.stats-bar{
+  background:var(--p700);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.stat-item{
+  padding:20px;text-align:center;
+  border-right:1px solid rgba(255,255,255,.12);
+}
+.stat-item:last-child{border-right:none;}
+.stat-n{
+  font-family:var(--fd);font-size:36px;
+  color:var(--white);line-height:1;
+}
+.stat-l{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--p100);opacity:.7;margin-top:3px;}
+
+/* ── SECTION BASE ────────────────────────────────────────── */
+section{padding:72px 0;}
+section.alt{background:var(--gray50);}
+section.dark{background:var(--p900);}
+.sec-label{font-size:11px;font-weight:600;color:var(--p500);text-transform:uppercase;letter-spacing:.12em;margin-bottom:9px;}
+.sec-label.lt{color:var(--p300);}
+.sec-h2{font-family:var(--fd);font-size:clamp(26px,3vw,36px);color:var(--gray900);line-height:1.12;margin-bottom:12px;}
+.sec-h2.lt{color:var(--white);}
+.sec-sub{font-size:15px;color:var(--gray700);max-width:500px;line-height:1.7;margin-bottom:36px;font-weight:300;}
+.sec-sub.lt{color:var(--p300);}
+
+/* ── SERVICES ────────────────────────────────────────────── */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.scard{
+  background:var(--white);border:1px solid var(--gray200);
+  border-radius:var(--rlg);padding:24px;
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.scard:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--p100);}
+.scard.hi{border-color:var(--p500);background:var(--p50);}
+.scard-icon{
+  width:42px;height:42px;border-radius:var(--rmd);
+  background:var(--p50);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:14px;
+}
+.scard.hi .scard-icon{background:var(--p900);}
+.scard-title{font-size:14px;font-weight:600;color:var(--gray900);margin-bottom:6px;}
+.scard-body{font-size:13px;color:var(--gray700);line-height:1.58;}
+.scard-price{
+  font-family:var(--fd);font-size:18px;color:var(--p700);
+  margin-top:12px;
+}
+.scard-price span{font-size:12px;font-weight:400;color:var(--gray500);}
+
+/* ── TESTIMONIALS ────────────────────────────────────────── */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.tcard{
+  background:var(--white);border:1px solid var(--gray200);
+  border-radius:var(--rlg);padding:24px;
+  transition:transform .2s,box-shadow .2s;
+}
+.tcard:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);}
+.tcard-stars{color:var(--a600);font-size:13px;letter-spacing:2px;margin-bottom:10px;}
+.tcard-quote{
+  font-size:14px;color:var(--gray900);line-height:1.68;
+  margin-bottom:14px;font-style:italic;font-family:var(--fd);
+}
+.tcard-divider{height:1px;background:var(--gray200);margin-bottom:12px;}
+.tcard-author{font-size:12px;font-weight:600;color:var(--gray700);}
+.tcard-loc{font-size:11px;color:var(--gray500);margin-top:2px;}
+
+/* ── HAPPY PLAN ──────────────────────────────────────────── */
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.pcard{
+  background:var(--white);border:1px solid var(--gray200);
+  border-radius:var(--rxl);padding:26px;
+  transition:transform .2s,box-shadow .2s;
+  display:flex;flex-direction:column;
+}
+.pcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.pcard.feat{border:2px solid var(--p500);position:relative;background:var(--p50);}
+.feat-badge-top{
+  position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+  background:var(--p500);color:var(--white);
+  font-size:11px;font-weight:600;
+  padding:3px 14px;border-radius:50px;white-space:nowrap;letter-spacing:.04em;
+}
+.plan-badge{font-size:11px;font-weight:600;padding:3px 11px;border-radius:50px;display:inline-block;margin-bottom:11px;}
+.plan-name{font-size:18px;font-weight:600;color:var(--gray900);margin-bottom:2px;}
+.plan-tag{font-size:13px;color:var(--gray500);margin-bottom:14px;}
+.plan-price{font-family:var(--fd);font-size:38px;color:var(--p900);line-height:1;}
+.plan-per{font-size:13px;color:var(--gray500);margin-bottom:3px;}
+.plan-note{font-size:11px;color:var(--gray500);margin-bottom:16px;}
+.plan-hr{border:none;border-top:1px solid var(--gray200);margin:14px 0;}
+.plan-feats{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
+.plan-feat{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:var(--gray700);line-height:1.45;}
+.fck{
+  width:17px;height:17px;min-width:17px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.plan-spacer{flex:1;}
+.plan-discount{
+  font-size:12px;font-weight:600;padding:5px 12px;
+  border-radius:50px;display:inline-block;margin-bottom:14px;
+}
+.plan-cta{
+  display:block;width:100%;
+  background:transparent;
+  border:1px solid var(--gray200);
+  color:var(--gray700);
+  font-size:14px;font-weight:500;
+  padding:11px 20px;border-radius:50px;
+  text-align:center;cursor:pointer;
+  transition:border-color .15s,color .15s,background .15s;
+}
+.plan-cta:hover{border-color:var(--p500);color:var(--p700);}
+.pcard.feat .plan-cta{
+  background:var(--p500);border-color:var(--p500);color:var(--white);
+  box-shadow:0 4px 14px rgba(127,119,221,.32);
+}
+.pcard.feat .plan-cta:hover{background:var(--p700);border-color:var(--p700);}
+
+/* ── RACHIO / SMART ──────────────────────────────────────── */
+.smart-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.rachio-card{
+  background:var(--white);border:2px solid var(--p500);
+  border-radius:var(--rxl);padding:28px;
+  box-shadow:var(--shadow-md);
+}
+.rachio-hd{
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:18px;padding-bottom:16px;
+  border-bottom:1px solid var(--gray200);
+}
+.rachio-logo{
+  width:46px;height:46px;border-radius:var(--rmd);
+  background:var(--p50);display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.rachio-name{font-size:16px;font-weight:600;color:var(--gray900);margin-bottom:2px;}
+.rachio-sub{font-size:13px;color:var(--p500);}
+.rachio-feat{
+  display:flex;gap:12px;align-items:flex-start;
+  padding:12px 0;border-bottom:1px solid var(--gray100);
+}
+.rachio-feat:last-child{border-bottom:none;padding-bottom:0;}
+.rachio-feat-icon{
+  width:32px;height:32px;min-width:32px;border-radius:var(--rsm);
+  background:var(--p50);display:flex;align-items:center;justify-content:center;
+}
+.rachio-feat-title{font-size:13px;font-weight:600;color:var(--gray900);margin-bottom:2px;}
+.rachio-feat-desc{font-size:12px;color:var(--gray700);line-height:1.55;}
+
+/* ── PROCESS ─────────────────────────────────────────────── */
+.process-row{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  position:relative;
+}
+.process-row::before{
+  content:'';position:absolute;
+  top:27px;left:12.5%;right:12.5%;
+  height:1px;background:var(--gray200);z-index:0;
+}
+.pstep{text-align:center;padding:0 12px;position:relative;}
+.pstep-num{
+  width:54px;height:54px;border-radius:50%;
+  background:var(--p50);border:2px solid var(--p100);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 14px;position:relative;z-index:1;
+}
+.pstep-num span{font-family:var(--fd);font-size:20px;color:var(--p700);}
+.pstep-title{font-size:14px;font-weight:600;color:var(--gray900);margin-bottom:6px;}
+.pstep-desc{font-size:12px;color:var(--gray700);line-height:1.55;}
+
+/* ── AREA ────────────────────────────────────────────────── */
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.area-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+.area-tag{
+  background:var(--white);border:1px solid var(--gray200);
+  color:var(--gray700);font-size:13px;
+  padding:6px 14px;border-radius:50px;
+  transition:border-color .15s,color .15s;
+}
+.area-tag:hover{border-color:var(--p300);color:var(--p700);}
+.area-creds{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  margin-top:28px;
+}
+.cred-card{
+  background:var(--white);border:1px solid var(--gray200);
+  border-radius:var(--rlg);padding:16px;text-align:center;
+}
+.cred-val{font-family:var(--fd);font-size:20px;color:var(--p900);margin-bottom:3px;}
+.cred-lbl{font-size:11px;color:var(--gray500);}
+
+/* ── BOOKING ─────────────────────────────────────────────── */
+.booking-section{background:var(--p900);padding:80px 0;}
+.booking-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start;}
+.booking-title{
+  font-family:var(--fd);font-size:clamp(34px,4vw,48px);
+  color:var(--white);line-height:1.08;margin-bottom:16px;
+}
+.booking-title em{color:var(--p300);font-style:italic;}
+.booking-desc{font-size:15px;color:var(--p300);line-height:1.7;margin-bottom:28px;font-weight:300;}
+.booking-promises{display:flex;flex-direction:column;gap:12px;}
+.promise{display:flex;align-items:flex-start;gap:12px;}
+.promise-ck{
+  width:20px;height:20px;border-radius:50%;
+  background:rgba(29,158,117,.15);
+  border:1px solid rgba(29,158,117,.3);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
+  font-size:10px;color:var(--g400);
+}
+.promise-text{font-size:13px;color:var(--p300);line-height:1.55;}
+.promise-text strong{color:var(--white);}
+
+.booking-form-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--rxl);padding:32px;
+  backdrop-filter:blur(12px);
+}
+.booking-form-title{
+  font-size:17px;font-weight:600;color:var(--white);margin-bottom:6px;
+}
+.booking-form-sub{font-size:12px;color:#6B6A9A;margin-bottom:24px;line-height:1.5;}
+
+/* GHL embed */
+.ghl-wrap{
+  background:rgba(255,255,255,.03);
+  border:1px dashed rgba(127,119,221,.3);
+  border-radius:var(--rlg);
+  min-height:480px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:12px;padding:28px;text-align:center;
+}
+.ghl-icon{
+  width:48px;height:48px;border-radius:var(--rlg);
+  background:rgba(127,119,221,.12);
+  display:flex;align-items:center;justify-content:center;
+}
+.ghl-title{font-size:15px;font-weight:600;color:var(--white);}
+.ghl-sub{font-size:12px;color:#6B6A9A;max-width:220px;line-height:1.55;}
+.ghl-code{
+  font-size:10px;color:rgba(127,119,221,.4);font-family:monospace;
+  background:rgba(0,0,0,.2);padding:5px 12px;border-radius:4px;margin-top:4px;
+}
+
+/* ── CTA BAND ────────────────────────────────────────────── */
+.cta-band{
+  background:var(--p50);
+  border-top:1px solid var(--p100);
+  border-bottom:1px solid var(--p100);
+  padding:52px 0;text-align:center;
+}
+.cta-band-offer{
+  display:inline-block;
+  background:var(--p100);color:var(--p900);
+  font-size:11px;font-weight:600;
+  padding:4px 14px;border-radius:50px;
+  letter-spacing:.06em;text-transform:uppercase;
+  margin-bottom:14px;
+}
+.cta-band-title{
+  font-family:var(--fd);font-size:clamp(26px,3.5vw,40px);
+  color:var(--p900);margin-bottom:10px;
+}
+.cta-band-sub{
+  font-size:15px;color:var(--p700);
+  margin-bottom:26px;font-weight:300;
+  max-width:440px;margin-left:auto;margin-right:auto;line-height:1.65;
+}
+.cta-band-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+footer{background:var(--p900);padding:52px 0 0;}
+.footer-inner{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;
+  gap:40px;padding-bottom:36px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.footer-logo-row{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.footer-logo-icon{
+  width:30px;height:30px;border-radius:var(--rmd);
+  background:rgba(127,119,221,.15);
+  display:flex;align-items:center;justify-content:center;
+}
+.footer-logo-text{color:var(--white);font-size:15px;font-weight:500;}
+.footer-tagline{font-size:13px;color:#6B6A9A;line-height:1.65;max-width:260px;margin-bottom:14px;}
+.footer-contact-line{font-size:13px;color:var(--p300);margin-bottom:4px;}
+.footer-col-title{font-size:10px;font-weight:600;color:var(--p500);text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px;}
+.footer-link{
+  display:block;font-size:13px;color:#6B6A9A;
+  padding:4px 0;cursor:pointer;
+  transition:color .15s;
+}
+.footer-link:hover{color:var(--p300);}
+.footer-bottom{
+  padding:16px 0;
+  display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:8px;
+}
+.footer-copy{font-size:11px;color:#4A4870;}
+
+/* ── POST-SUBMISSION CONFIRM ─────────────────────────────── */
+.form-body{transition:opacity .3s;}
+.form-body.hidden{display:none;}
+.form-confirm{
+  display:none;flex-direction:column;
+  align-items:center;text-align:center;
+  padding:20px 0 8px;
+  animation:fadeUp .5s ease forwards;
+}
+.form-confirm.visible{display:flex;}
+.confirm-icon{
+  width:64px;height:64px;border-radius:50%;
+  background:rgba(29,158,117,.12);
+  border:1.5px solid rgba(29,158,117,.3);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:18px;
+}
+.confirm-check{
+  width:28px;height:28px;
+  stroke:var(--g600);stroke-width:2.5;
+  stroke-linecap:round;stroke-linejoin:round;
+  fill:none;
+  stroke-dasharray:40;stroke-dashoffset:40;
+  animation:drawCheck .5s ease .2s forwards;
+}
+@keyframes drawCheck{to{stroke-dashoffset:0;}}
+.confirm-headline{
+  font-family:var(--fd);font-size:28px;
+  color:var(--white);margin-bottom:10px;line-height:1;
+}
+.confirm-sub{
+  font-size:14px;color:var(--p300);
+  line-height:1.65;max-width:300px;margin-bottom:22px;
+}
+.confirm-sub strong{color:var(--white);}
+.confirm-divider{width:100%;height:1px;background:rgba(255,255,255,.08);margin-bottom:18px;}
+.confirm-escape{font-size:12px;color:#6B6A9A;margin-bottom:6px;}
+.confirm-phone{
+  font-family:var(--fd);font-size:22px;
+  color:var(--p300);text-decoration:none;
+  display:flex;align-items:center;gap:8px;
+  transition:color .15s;
+}
+.confirm-phone:hover{color:var(--white);}
+.confirm-trust{
+  display:flex;gap:14px;flex-wrap:wrap;
+  justify-content:center;margin-top:18px;
+}
+.confirm-trust-item{
+  font-size:10px;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;
+  color:#4A4870;display:flex;align-items:center;gap:5px;
+}
+.confirm-trust-dot{width:3px;height:3px;border-radius:50%;background:#4A4870;}
+
+/* ── STICKY MOBILE BAR ───────────────────────────────────── */
+.sticky-bar{
+  display:none;position:fixed;
+  bottom:0;left:0;right:0;z-index:200;
+  background:var(--p900);
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:10px 16px;gap:10px;
+}
+.sticky-call{
+  flex:1;background:var(--g600);color:var(--white);
+  font-size:14px;font-weight:500;
+  padding:13px 16px;border-radius:50px;
+  text-decoration:none;text-align:center;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.sticky-book{
+  flex:1;background:var(--p500);color:var(--white);
+  font-size:14px;font-weight:500;
+  padding:13px 16px;border-radius:50px;
+  text-align:center;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+
+/* ── HAPPY HOMES BANNER ──────────────────────────────────── */
+.hh-banner{
+  background:var(--p50);
+  border:1px solid var(--p100);
+  border-radius:var(--rlg);
+  padding:24px 28px;
+  display:flex;align-items:center;gap:16px;
+  margin-bottom:40px;
+}
+.hh-icon{
+  width:40px;height:40px;border-radius:var(--rmd);
+  background:var(--p100);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+}
+.hh-title{font-size:14px;font-weight:600;color:var(--p900);margin-bottom:3px;}
+.hh-body{font-size:13px;color:var(--p700);line-height:1.6;}
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;}
+  .hero-right{display:none;}
+  .smart-grid{grid-template-columns:1fr;}
+  .booking-grid{grid-template-columns:1fr;gap:36px;}
+  .area-grid{grid-template-columns:1fr;}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:28px;}
+}
+@media(max-width:768px){
+  nav .nav-links,.nav-right .nav-phone{display:none;}
+  .hamburger{display:flex;}
+  .hero{padding:80px 0 60px;}
+  .hero-h1{font-size:42px;}
+  .hero-btns{flex-direction:column;align-items:stretch;}
+  .hero-btns .btn-pri,.hero-btns .btn-out{text-align:center;padding:14px 20px;}
+  .stats-bar{grid-template-columns:repeat(2,1fr);}
+  .stat-item:nth-child(2){border-right:none;}
+  section{padding:52px 0;}
+  .svc-grid{grid-template-columns:1fr;}
+  .tgrid{grid-template-columns:1fr;}
+  .plan-grid{grid-template-columns:1fr;}
+  .process-row{grid-template-columns:1fr 1fr;gap:24px;}
+  .process-row::before{display:none;}
+  .area-creds{grid-template-columns:repeat(3,1fr);}
+  .booking-section{padding:52px 0;}
+  .booking-title{font-size:36px;}
+  .booking-form-card{padding:24px 20px;}
+  .cta-band-btns{flex-direction:column;align-items:center;}
+  .cta-band-btns .btn-pri,.cta-band-btns .btn-out{width:100%;max-width:300px;text-align:center;}
+  .footer-inner{grid-template-columns:1fr;padding-bottom:28px;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+  .sticky-bar{display:flex;}
+  body{padding-bottom:70px;}
+}
+@media(max-width:480px){
+  .hero-h1{font-size:36px;}
+  .booking-title{font-size:30px;}
+  .area-creds{grid-template-columns:repeat(2,1fr);}
+  .hh-banner{flex-direction:column;gap:12px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})">
+      <div class="nav-brand-icon">
+        <svg width="18" height="18" viewBox="0 0 32 32" fill="none">
+          <path d="M16 4C10 4 6 9 6 14c0 7 10 14 10 14s10-7 10-14c0-5-4-10-10-10z" stroke="#AFA9EC" stroke-width="1.8" fill="none"/>
+          <circle cx="16" cy="14" r="3.5" stroke="#AFA9EC" stroke-width="1.6" fill="none"/>
+        </svg>
+      </div>
+      <div class="nav-brand-text">Happy <span>Sprinklers</span></div>
+    </div>
+    <div class="nav-links">
+      <button class="nav-link" onclick="scrollTo('services')">Services</button>
+      <button class="nav-link" onclick="scrollTo('plans')">Happy Plan</button>
+      <button class="nav-link" onclick="scrollTo('smart')">Smart Upgrade</button>
+      <button class="nav-link" onclick="scrollTo('about')">About</button>
+    </div>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:8325550192">
+        <svg width="13" height="13" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="#AFA9EC"/></svg>
+        (832) 555-0192
+      </a>
+      <button class="nav-cta" onclick="scrollTo('booking')">Book a visit</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <button onclick="scrollTo('services');closeMob()">Services</button>
+  <button onclick="scrollTo('plans');closeMob()">Happy Plan</button>
+  <button onclick="scrollTo('smart');closeMob()">Smart Upgrade</button>
+  <button onclick="scrollTo('about');closeMob()">About</button>
+  <a href="tel:8325550192" onclick="closeMob()">📞 (832) 555-0192</a>
+  <button class="mob-cta" onclick="scrollTo('booking');closeMob()">Book a visit</button>
+</div>
+
+<!-- HERO -->
+<section id="hero" style="padding:0;">
+  <div class="hero">
+    <div class="hero-glow1"></div>
+    <div class="hero-glow2"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-eyebrow">The Woodlands, TX · TCEQ Licensed Irrigator</div>
+          <h1 class="hero-h1">Your sprinklers fixed right — by a local who <em>actually shows up.</em></h1>
+          <p class="hero-sub">Honest repairs, monthly maintenance plans, and Rachio smart upgrades. No surprise invoices, no disappearing acts.</p>
+          <div class="hero-urgency">
+            <div class="urgency-dot"></div>
+            <span class="urgency-text">Scheduling same-day & next-day visits · Woodlands area</span>
+          </div>
+          <div class="hero-rating">
+            <span class="hero-stars">★★★★★</span>
+            <span class="hero-rating-text"><strong>5.0 on Google</strong> · Replace with your review count</span>
+          </div>
+          <div class="hero-btns">
+            <a class="btn-pri" href="tel:8325550192" style="display:inline-flex;align-items:center;gap:8px;">
+              <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>Call Now
+            </a>
+            <button class="btn-out" onclick="scrollTo('booking')">Book a Free Visit</button>
+          </div>
+          <div class="trust-row">
+            <span class="trust-item"><span class="trust-dot"></span>TCEQ Licensed</span>
+            <span class="trust-item"><span class="trust-dot"></span>Insured</span>
+            <span class="trust-item"><span class="trust-dot"></span>Rachio Certified</span>
+            <span class="trust-item"><span class="trust-dot"></span>No contracts</span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-proof-card">
+            <div class="hero-proof-title">What neighbors are saying</div>
+            <div class="proof-tcard">
+              <div class="proof-stars">★★★★★</div>
+              <p class="proof-quote">"Showed up same day, fixed three broken heads and realigned two zones. Best sprinkler company I've used in The Woodlands."</p>
+              <div class="proof-author">— Replace with real name · The Woodlands, TX</div>
+            </div>
+            <div class="proof-tcard">
+              <div class="proof-stars">★★★★★</div>
+              <p class="proof-quote">"The Happy Plan has been worth every penny. My lawn has never looked better and I haven't had a single surprise bill."</p>
+              <div class="proof-author">— Replace with real name · Spring, TX</div>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-badge-row">
+              <span class="proof-badge">TCEQ Licensed</span>
+              <span class="proof-badge">Rachio Certified</span>
+              <span class="proof-badge">Insured</span>
+              <span class="proof-badge">No contracts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="stat-n" id="odo-repairs">0</div><div class="stat-l">Repairs completed</div></div>
+  <div class="stat-item"><div class="stat-n">Same</div><div class="stat-l">Day scheduling</div></div>
+  <div class="stat-item"><div class="stat-n">2hr</div><div class="stat-l">Visit confirmed by</div></div>
+  <div class="stat-item"><div class="stat-n">5★</div><div class="stat-l">Google rating</div></div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="sec-label">What we do</div>
+    <h2 class="sec-h2">Sprinkler services for every situation</h2>
+    <p class="sec-sub">Whether it's a single broken head or a full seasonal tune-up, we diagnose honestly and fix it right — before the work starts, you know what it costs.</p>
+    <div class="svc-grid">
+
+      <div class="scard hi">
+        <div class="scard-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#AFA9EC" stroke-width="1.6"/><path d="M12 8v4.5l2.5 2" stroke="#AFA9EC" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="scard-title">Sprinkler Repair</div>
+        <div class="scard-body">Broken heads, leaks, pressure issues, valve failures — diagnosed and fixed same visit. Diagnostic fee waived when you proceed with repair.</div>
+        <div class="scard-price">From $65 <span>/ service call</span></div>
+      </div>
+
+      <div class="scard">
+        <div class="scard-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="#7F77DD" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="5" stroke="#7F77DD" stroke-width="1.5"/></svg>
+        </div>
+        <div class="scard-title">Seasonal Maintenance</div>
+        <div class="scard-body">Zone-by-zone inspection, head alignment, controller scheduling, and a written status report. Catch problems before your water bill does.</div>
+        <div class="scard-price">From $89 <span>/ visit</span></div>
+      </div>
+
+      <div class="scard">
+        <div class="scard-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#7F77DD" stroke-width="1.5" fill="none"/><path d="M9 22V12h6v10" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="scard-title">Realtor Inspection</div>
+        <div class="scard-body">Full system report for listings and closings. Every zone tested, documented, and delivered. Scheduled fast to keep your timeline moving.</div>
+        <div class="scard-price">From $95 <span>/ report</span></div>
+      </div>
+
+      <div class="scard">
+        <div class="scard-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#7F77DD" stroke-width="1.5"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round"/><path d="M9 16l2 2 4-4" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="scard-title">System Diagnostic</div>
+        <div class="scard-body">Not sure what's wrong? We run a full system check, map every zone, and give you a straight answer — no guessing, no upselling.</div>
+        <div class="scard-price">From $65 <span>/ diagnostic</span></div>
+      </div>
+
+      <div class="scard">
+        <div class="scard-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="scard-title">New Zone Add-On</div>
+        <div class="scard-body">Adding a garden bed, side yard, or new landscaping? We design and install new zones that integrate cleanly with your existing system.</div>
+        <div class="scard-price">From $180 <span>/ zone</span></div>
+      </div>
+
+      <div class="scard">
+        <div class="scard-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="scard-title">Controller Upgrade</div>
+        <div class="scard-body">Outdated timer? We install and program modern controllers with app-based scheduling, weather sensors, and water-saving logic.</div>
+        <div class="scard-price">From $120 <span>/ install</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="alt">
+  <div class="container">
+    <div class="sec-label">Reviews</div>
+    <h2 class="sec-h2">What The Woodlands homeowners say</h2>
+    <p class="sec-sub">Real feedback from neighbors who've had us out. Swap these for your actual Google reviews when you go live.</p>
+    <div class="tgrid">
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-quote">"Showed up the same morning I called, fixed two broken heads and reset all my zones. Honest pricing and no pressure to do extra work. These are my go-to guys."</p>
+        <div class="tcard-divider"></div>
+        <div class="tcard-author">— Replace with Real Name</div>
+        <div class="tcard-loc">The Woodlands, TX</div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-quote">"I've been on the Happy Plan for four months and my water bill is noticeably lower. The monthly visit takes 20 minutes and they always leave me a written summary. Love it."</p>
+        <div class="tcard-divider"></div>
+        <div class="tcard-author">— Replace with Real Name</div>
+        <div class="tcard-loc">Spring, TX</div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-quote">"Used them for a realtor inspection before listing our home. Fast, thorough, and the report was exactly what our agent needed. Closed on time with zero issues."</p>
+        <div class="tcard-divider"></div>
+        <div class="tcard-author">— Replace with Real Name</div>
+        <div class="tcard-loc">Tomball, TX</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HAPPY PLAN -->
+<section id="plans">
+  <div class="container">
+    <div class="sec-label">Monthly plans</div>
+    <h2 class="sec-h2">The Happy Plan — monthly care, zero headaches</h2>
+    <p class="sec-sub">One visit a month. Priority scheduling. Repair discounts. No contracts, cancel anytime.</p>
+    <div class="plan-grid">
+
+      <div class="pcard">
+        <span class="plan-badge" style="background:#EAF3DE;color:#27500A;">Basic</span>
+        <div class="plan-name">Happy Basic</div>
+        <div class="plan-tag">Essential monthly care</div>
+        <div class="plan-price">$19<span style="font-size:20px;">.99</span></div>
+        <div class="plan-per">/month per system</div>
+        <div class="plan-note">No contracts · cancel anytime</div>
+        <hr class="plan-hr">
+        <ul class="plan-feats">
+          <li class="plan-feat"><span class="fck" style="background:#EAF3DE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#27500A" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>1 monthly system visit</li>
+          <li class="plan-feat"><span class="fck" style="background:#EAF3DE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#27500A" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Head alignment & coverage check</li>
+          <li class="plan-feat"><span class="fck" style="background:#EAF3DE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#27500A" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Controller schedule optimization</li>
+          <li class="plan-feat"><span class="fck" style="background:#EAF3DE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#27500A" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Monthly system status report</li>
+          <li class="plan-feat"><span class="fck" style="background:#EAF3DE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#27500A" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Next-day priority scheduling</li>
+        </ul>
+        <div class="plan-spacer"></div>
+        <div class="plan-discount" style="background:#EAF3DE;color:#27500A;">10% off all repairs</div>
+        <button class="plan-cta" onclick="scrollTo('booking')">Get started</button>
+      </div>
+
+      <div class="pcard feat">
+        <div class="feat-badge-top">Most popular</div>
+        <span class="plan-badge" style="background:#EEEDFE;color:#3C3489;">Plus</span>
+        <div class="plan-name">Happy Plus</div>
+        <div class="plan-tag">Full peace of mind</div>
+        <div class="plan-price">$29<span style="font-size:20px;">.99</span></div>
+        <div class="plan-per">/month per system</div>
+        <div class="plan-note">No contracts · cancel anytime</div>
+        <hr class="plan-hr">
+        <ul class="plan-feats">
+          <li class="plan-feat"><span class="fck" style="background:#EEEDFE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#3C3489" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Everything in Basic</li>
+          <li class="plan-feat"><span class="fck" style="background:#EEEDFE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#3C3489" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Minor repairs included (2 heads/mo)</li>
+          <li class="plan-feat"><span class="fck" style="background:#EEEDFE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#3C3489" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Leak & pressure diagnostic</li>
+          <li class="plan-feat"><span class="fck" style="background:#EEEDFE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#3C3489" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Seasonal zone adjustment</li>
+          <li class="plan-feat"><span class="fck" style="background:#EEEDFE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#3C3489" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Same-day emergency response</li>
+          <li class="plan-feat"><span class="fck" style="background:#EEEDFE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#3C3489" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Water efficiency report</li>
+        </ul>
+        <div class="plan-spacer"></div>
+        <div class="plan-discount" style="background:#EEEDFE;color:#3C3489;">15% off all repairs</div>
+        <button class="plan-cta" onclick="scrollTo('booking')">Choose Happy Plus</button>
+      </div>
+
+      <div class="pcard">
+        <span class="plan-badge" style="background:#E1F5EE;color:#085041;">Pro</span>
+        <div class="plan-name">Happy Pro</div>
+        <div class="plan-tag">White-glove, zero worries</div>
+        <div class="plan-price">$49<span style="font-size:20px;">.99</span></div>
+        <div class="plan-per">/month per system</div>
+        <div class="plan-note">No contracts · cancel anytime</div>
+        <hr class="plan-hr">
+        <ul class="plan-feats">
+          <li class="plan-feat"><span class="fck" style="background:#E1F5EE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#085041" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Everything in Plus</li>
+          <li class="plan-feat"><span class="fck" style="background:#E1F5EE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#085041" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Unlimited minor repairs included</li>
+          <li class="plan-feat"><span class="fck" style="background:#E1F5EE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#085041" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Annual full system report</li>
+          <li class="plan-feat"><span class="fck" style="background:#E1F5EE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#085041" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Dedicated technician</li>
+          <li class="plan-feat"><span class="fck" style="background:#E1F5EE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#085041" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>Remote system monitoring</li>
+          <li class="plan-feat"><span class="fck" style="background:#E1F5EE;"><svg width="9" height="9" viewBox="0 0 10 10"><path d="M2 5l2.5 2.5 4-4" stroke="#085041" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></span>$30 off Rachio smart upgrade</li>
+        </ul>
+        <div class="plan-spacer"></div>
+        <div class="plan-discount" style="background:#E1F5EE;color:#085041;">20% off all repairs</div>
+        <button class="plan-cta" onclick="scrollTo('booking')">Get started</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RACHIO SMART UPGRADE -->
+<section class="alt" id="smart">
+  <div class="container">
+    <div class="sec-label">Smart upgrade</div>
+    <h2 class="sec-h2">Go smart with Rachio</h2>
+    <p class="sec-sub">Replace your outdated timer with a Rachio controller that waters smarter, saves money, and connects to your phone.</p>
+    <div class="smart-grid">
+      <div>
+        <div class="rachio-card">
+          <div class="rachio-hd">
+            <div class="rachio-logo">
+              <svg width="22" height="22" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="#7F77DD" stroke-width="1.8"/><path d="M10 16a6 6 0 0112 0" stroke="#7F77DD" stroke-width="1.6" stroke-linecap="round"/><circle cx="16" cy="19" r="2" fill="#7F77DD"/></svg>
+            </div>
+            <div>
+              <div class="rachio-name">Rachio Smart Controller</div>
+              <div class="rachio-sub">Installed & configured by Happy Sprinklers</div>
+            </div>
+          </div>
+          <div class="rachio-feat">
+            <div class="rachio-feat-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2z" stroke="#7F77DD" stroke-width="1.4"/><path d="M10 6v4l2.5 2" stroke="#7F77DD" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+            <div><div class="rachio-feat-title">Weather-smart watering</div><div class="rachio-feat-desc">Skips cycles automatically when rain is coming. No more watering during a storm.</div></div>
+          </div>
+          <div class="rachio-feat">
+            <div class="rachio-feat-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="#7F77DD" stroke-width="1.4"/><path d="M7 10h6M10 7v6" stroke="#7F77DD" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+            <div><div class="rachio-feat-title">Control from your phone</div><div class="rachio-feat-desc">Start, pause, or schedule any zone from anywhere. Works with Alexa & Google Home.</div></div>
+          </div>
+          <div class="rachio-feat">
+            <div class="rachio-feat-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M10 3v14" stroke="#7F77DD" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+            <div><div class="rachio-feat-title">Up to 50% water savings</div><div class="rachio-feat-desc">Smart scheduling and soil sensing cut waste without sacrificing your lawn.</div></div>
+          </div>
+          <div class="rachio-feat">
+            <div class="rachio-feat-icon"><svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#7F77DD" stroke-width="1.4"/><path d="M7 10l2 2 4-4" stroke="#7F77DD" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><div class="rachio-feat-title">Remote monitoring (Pro plan)</div><div class="rachio-feat-desc">Happy Pro subscribers get shared access — we catch issues before you notice them.</div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="sec-label">Why upgrade now</div>
+        <h3 style="font-family:var(--fd);font-size:28px;color:var(--gray900);line-height:1.15;margin-bottom:14px;">Your old timer is costing you money every month</h3>
+        <p style="font-size:15px;color:var(--gray700);line-height:1.7;margin-bottom:20px;font-weight:300;">A standard timer waters the same amount regardless of weather, season, or soil conditions. A Rachio adjusts automatically — and pays for itself in water savings within the first year for most Woodlands homes.</p>
+        <p style="font-size:15px;color:var(--gray700);line-height:1.7;margin-bottom:28px;font-weight:300;">Most installs take under 2 hours. We configure every zone, set your schedule, and walk you through the app before we leave.</p>
+        <div style="background:var(--p50);border:1px solid var(--p100);border-radius:var(--rlg);padding:20px 22px;margin-bottom:24px;">
+          <div style="font-size:11px;font-weight:600;color:var(--p500);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px;">What's included</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="font-size:13px;color:var(--gray700);display:flex;gap:8px;"><span style="color:var(--p500);">→</span> Controller hardware & installation</div>
+            <div style="font-size:13px;color:var(--gray700);display:flex;gap:8px;"><span style="color:var(--p500);">→</span> Full zone programming & app setup</div>
+            <div style="font-size:13px;color:var(--gray700);display:flex;gap:8px;"><span style="color:var(--p500);">→</span> Compatibility check with existing system</div>
+            <div style="font-size:13px;color:var(--gray700);display:flex;gap:8px;"><span style="color:var(--p500);">→</span> 30-day follow-up support</div>
+            <div style="font-size:13px;color:var(--gray700);display:flex;gap:8px;"><span style="color:var(--p500);">→</span> $30 off for Happy Pro subscribers</div>
+          </div>
+        </div>
+        <button class="btn-pri" onclick="scrollTo('booking')" style="width:100%;">Book a Rachio install</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section>
+  <div class="container">
+    <div class="sec-label">Our process</div>
+    <h2 class="sec-h2">Simple from start to finish</h2>
+    <p class="sec-sub" style="margin-bottom:44px;">No waiting days for a callback. No surprise invoices. No disappearing after the job.</p>
+    <div class="process-row">
+      <div class="pstep">
+        <div class="pstep-num"><span>01</span></div>
+        <div class="pstep-title">Book online or call</div>
+        <div class="pstep-desc">Pick a time that works. Most jobs scheduled same day or next day.</div>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num"><span>02</span></div>
+        <div class="pstep-title">We confirm in 2 hours</div>
+        <div class="pstep-desc">You get a confirmed visit window — not a vague "we'll call you."</div>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num"><span>03</span></div>
+        <div class="pstep-title">Honest diagnosis first</div>
+        <div class="pstep-desc">We tell you what's wrong and what it costs — before touching anything.</div>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num"><span>04</span></div>
+        <div class="pstep-title">Fixed & documented</div>
+        <div class="pstep-desc">Work done right, written report left behind. We come back if something fails.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="container">
+    <div class="cta-band-offer">New customers · First visit</div>
+    <h2 class="cta-band-title">Book your first visit today.<br>We'll confirm within 2 hours.</h2>
+    <p class="cta-band-sub">Same-day and next-day availability. No pressure, no contracts. Just your sprinklers fixed right.</p>
+    <div class="cta-band-btns">
+      <button class="btn-pri" onclick="scrollTo('booking')">Book a free visit</button>
+      <a class="btn-out" href="tel:8325550192" style="padding:13px 26px;border-radius:50px;border:1px solid rgba(127,119,221,.4);color:var(--p700);font-size:15px;display:inline-block;">(832) 555-0192</a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT / AREA -->
+<section class="alt" id="about">
+  <div class="container">
+    <div class="hh-banner">
+      <div class="hh-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#534AB7" stroke-width="1.6" fill="none"/><path d="M9 22V12h6v10" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div>
+        <div class="hh-title">Part of Happy Homes</div>
+        <p class="hh-body">Happy Sprinklers is a division of Happy Homes — a trusted name in The Woodlands home services community. Same standards, same accountability, same people.</p>
+      </div>
+    </div>
+    <div class="area-grid">
+      <div>
+        <div class="sec-label">Service area</div>
+        <h2 class="sec-h2">Based in The Woodlands. Serving the whole area.</h2>
+        <p class="sec-sub" style="margin-bottom:16px;">Montgomery and Harris County coverage. If you're not sure we cover your neighborhood, call us — we'll tell you straight.</p>
+        <div class="area-tags">
+          <span class="area-tag">The Woodlands</span>
+          <span class="area-tag">Spring</span>
+          <span class="area-tag">Tomball</span>
+          <span class="area-tag">Conroe</span>
+          <span class="area-tag">Magnolia</span>
+          <span class="area-tag">Kingwood</span>
+          <span class="area-tag">Humble</span>
+        </div>
+        <div class="area-creds">
+          <div class="cred-card"><div class="cred-val">TCEQ</div><div class="cred-lbl">Licensed irrigator</div></div>
+          <div class="cred-card"><div class="cred-val">Insured</div><div class="cred-lbl">General liability</div></div>
+          <div class="cred-card"><div class="cred-val">Local</div><div class="cred-lbl">The Woodlands, TX</div></div>
+          <div class="cred-card"><div class="cred-val">DBA</div><div class="cred-lbl">Texas SOS registered</div></div>
+          <div class="cred-card"><div class="cred-val">Rachio</div><div class="cred-lbl">Certified installer</div></div>
+          <div class="cred-card"><div class="cred-val">Happy</div><div class="cred-lbl">Homes division</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sec-label">How we operate</div>
+        <div style="display:flex;flex-direction:column;">
+          <div style="display:flex;gap:20px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--gray200);">
+            <div style="font-family:var(--fd);font-size:36px;color:var(--p100);min-width:44px;line-height:1;">01</div>
+            <div><div style="font-size:14px;font-weight:600;color:var(--gray900);margin-bottom:4px;">You book, we show up</div><div style="font-size:13px;color:var(--gray700);line-height:1.6;">Same or next day for most jobs. No waiting days for a callback.</div></div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--gray200);">
+            <div style="font-family:var(--fd);font-size:36px;color:var(--p100);min-width:44px;line-height:1;">02</div>
+            <div><div style="font-size:14px;font-weight:600;color:var(--gray900);margin-bottom:4px;">We diagnose honestly</div><div style="font-size:13px;color:var(--gray700);line-height:1.6;">A straight assessment before any work starts. No surprise invoices.</div></div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--gray200);">
+            <div style="font-family:var(--fd);font-size:36px;color:var(--p100);min-width:44px;line-height:1;">03</div>
+            <div><div style="font-size:14px;font-weight:600;color:var(--gray900);margin-bottom:4px;">We fix it right</div><div style="font-size:13px;color:var(--gray700);line-height:1.6;">TCEQ-licensed work with quality parts. If it fails, we come back.</div></div>
+          </div>
+          <div style="display:flex;gap:20px;align-items:flex-start;padding:18px 0;">
+            <div style="font-family:var(--fd);font-size:36px;color:var(--p100);min-width:44px;line-height:1;">04</div>
+            <div><div style="font-size:14px;font-weight:600;color:var(--gray900);margin-bottom:4px;">We stay in touch</div><div style="font-size:13px;color:var(--gray700);line-height:1.6;">Happy Plan subscribers get monthly reports and a tech who knows their system.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="dark" id="booking" style="padding:80px 0;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px;">
+      <div class="sec-label lt">Free for new customers</div>
+      <h2 class="sec-h2 lt" style="margin-bottom:8px;">Book your visit.</h2>
+      <p class="sec-sub lt" style="margin:0 auto;text-align:center;">Select a time that works and we'll confirm within 2 hours during business hours.</p>
+    </div>
+    <div class="booking-grid">
+      <div>
+        <h3 class="booking-title">Your lawn deserves a pro who <em>shows up.</em></h3>
+        <p class="booking-desc">New customers get a free first-visit diagnostic. We'll assess your system, tell you exactly what's needed, and give you a written quote — no pressure, no obligation.</p>
+        <div class="booking-promises">
+          <div class="promise">
+            <div class="promise-ck">✓</div>
+            <div class="promise-text"><strong>Confirmed within 2 hours</strong> during business hours</div>
+          </div>
+          <div class="promise">
+            <div class="promise-ck">✓</div>
+            <div class="promise-text"><strong>Same-day & next-day</strong> availability for most visits</div>
+          </div>
+          <div class="promise">
+            <div class="promise-ck">✓</div>
+            <div class="promise-text"><strong>Written quote</strong> before any work begins — no surprises</div>
+          </div>
+          <div class="promise">
+            <div class="promise-ck">✓</div>
+            <div class="promise-text"><strong>TCEQ-licensed</strong> irrigator on every job</div>
+          </div>
+          <div class="promise">
+            <div class="promise-ck">✓</div>
+            <div class="promise-text"><strong>First month free</strong> on any Happy Plan for Happy Homes customers</div>
+          </div>
+        </div>
+      </div>
+      <div class="booking-form-card">
+
+        <!-- FORM BODY -->
+        <div id="formBody">
+          <div class="booking-form-title">Schedule your visit</div>
+          <p class="booking-form-sub">Pick a date and time. We'll confirm your window within 2 hours.</p>
+          <!-- REPLACE WITH YOUR GOHIGHLEVEL CALENDAR EMBED -->
+          <!-- <iframe src="https://api.leadconnectorhq.com/widget/booking/YOUR_ID" style="width:100%;border:none;min-height:500px;"></iframe> -->
+          <div class="ghl-wrap">
+            <div class="ghl-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="18" rx="2" stroke="#AFA9EC" stroke-width="1.5"/>
+                <path d="M3 9h18M8 2v4M16 2v4" stroke="#AFA9EC" stroke-width="1.5" stroke-linecap="round"/>
+                <rect x="7" y="13" width="3" height="3" rx=".5" fill="#AFA9EC" opacity=".5"/>
+              </svg>
+            </div>
+            <div class="ghl-title">Calendar Booking Widget</div>
+            <p class="ghl-sub">Replace this block with your calendar booking widget embed code</p>
+            <div class="ghl-code">&lt;!-- Calendar Widget --&gt;</div>
+            <button class="btn-pri" style="margin-top:12px;font-size:13px;padding:10px 22px;" onclick="showConfirm()">Preview confirmation →</button>
+          </div>
+        </div>
+
+        <!-- CONFIRMATION STATE -->
+        <div class="form-confirm" id="formConfirm">
+          <div class="confirm-icon">
+            <svg class="confirm-check" viewBox="0 0 24 24">
+              <polyline points="4,13 9,18 20,7"/>
+            </svg>
+          </div>
+          <div class="confirm-headline">You're Booked In.</div>
+          <p class="confirm-sub">We just sent a confirmation to your phone. A Happy Sprinklers tech will reach out <strong>within 2 hours</strong> to confirm your visit window.</p>
+          <div class="confirm-divider"></div>
+          <p class="confirm-escape">Can't wait? Call or text us directly —</p>
+          <a class="confirm-phone" href="tel:8325550192">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="#AFA9EC"/></svg>
+            (832) 555-0192 · Mon–Sat 7am–6pm
+          </a>
+          <div class="confirm-trust">
+            <span class="confirm-trust-item"><span class="confirm-trust-dot"></span>TCEQ Licensed</span>
+            <span class="confirm-trust-item"><span class="confirm-trust-dot"></span>Insured</span>
+            <span class="confirm-trust-item"><span class="confirm-trust-dot"></span>The Woodlands, TX</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo-row">
+          <div class="footer-logo-icon">
+            <svg width="16" height="16" viewBox="0 0 32 32" fill="none"><path d="M16 4C10 4 6 9 6 14c0 7 10 14 10 14s10-7 10-14c0-5-4-10-10-10z" stroke="#AFA9EC" stroke-width="1.8" fill="none"/><circle cx="16" cy="14" r="3.5" stroke="#AFA9EC" stroke-width="1.6" fill="none"/></svg>
+          </div>
+          <span class="footer-logo-text">Happy Sprinklers</span>
+        </div>
+        <p class="footer-tagline">Your lawn, happy year-round. Sprinkler repair, maintenance, and smart upgrades in The Woodlands, TX. A division of Happy Homes.</p>
+        <p class="footer-contact-line">(832) 555-0192</p>
+        <p class="footer-contact-line">hello@happysprinklers.com</p>
+        <p class="footer-contact-line" style="margin-top:4px;font-size:12px;color:#4A4870;">Mon–Sat · 7am–6pm</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <span class="footer-link" onclick="scrollTo('services')">Sprinkler repair</span>
+        <span class="footer-link" onclick="scrollTo('services')">Seasonal maintenance</span>
+        <span class="footer-link" onclick="scrollTo('smart')">Rachio smart upgrade</span>
+        <span class="footer-link" onclick="scrollTo('services')">Realtor inspections</span>
+        <span class="footer-link" onclick="scrollTo('plans')">Happy Plan</span>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <span class="footer-link" onclick="scrollTo('about')">About us</span>
+        <span class="footer-link" onclick="scrollTo('booking')">Book a visit</span>
+        <span class="footer-link" onclick="scrollTo('plans')">Pricing</span>
+        <a class="footer-link" href="tel:8325550192">Call (832) 555-0192</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Happy Sprinklers · A division of Happy Homes · TCEQ Licensed Irrigator · The Woodlands, TX</p>
+      <p class="footer-copy">happysprinklers.com</p>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <a class="sticky-call" href="tel:8325550192">
+    <svg width="15" height="15" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>
+    Call Now
+  </a>
+  <button class="sticky-book" onclick="scrollTo('booking')">
+    <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="14" rx="2" stroke="white" stroke-width="1.5"/><path d="M3 8h14M8 2v4M12 2v4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+    Book a Visit
+  </button>
+</div>
+
+<script>
+// Smooth scroll to section
+function scrollTo(id){
+  var el=document.getElementById(id);
+  if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}
+}
+
+// Hamburger menu
+var hamburger=document.getElementById('hamburger');
+var mobMenu=document.getElementById('mobMenu');
+hamburger.addEventListener('click',function(){
+  hamburger.classList.toggle('open');
+  mobMenu.classList.toggle('open');
+});
+function closeMob(){
+  hamburger.classList.remove('open');
+  mobMenu.classList.remove('open');
+}
+
+// Post-submission confirmation
+function showConfirm(){
+  document.getElementById('formBody').classList.add('hidden');
+  var confirm=document.getElementById('formConfirm');
+  confirm.classList.add('visible');
+}
+
+// Odometer animation for 500+ repairs stat
+function animateOdometer(el, target, duration, suffix){
+  var start=0;
+  var startTime=null;
+  var easeOut=function(t){return 1-Math.pow(1-t,3);};
+  function step(timestamp){
+    if(!startTime) startTime=timestamp;
+    var progress=Math.min((timestamp-startTime)/duration,1);
+    var eased=easeOut(progress);
+    var current=Math.floor(eased*target);
+    el.textContent=current+(progress===1 ? suffix : '');
+    if(progress<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// Trigger odometer when stats bar enters viewport
+var odoEl=document.getElementById('odo-repairs');
+var odoFired=false;
+var observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting && !odoFired){
+      odoFired=true;
+      animateOdometer(odoEl, 500, 1800, '+');
+      observer.disconnect();
+    }
+  });
+},{threshold:0.5});
+if(odoEl) observer.observe(odoEl);
+
+// Nav active state on scroll
+var sections=['services','plans','smart','about','booking'];
+window.addEventListener('scroll',function(){
+  var scrollY=window.scrollY;
+  sections.forEach(function(id){
+    var el=document.getElementById(id);
+    if(el&&scrollY>=el.offsetTop-80){}
+  });
+});
+
+// Close mob menu on outside click
+document.addEventListener('click',function(e){
+  if(mobMenu.classList.contains('open')&&!mobMenu.contains(e.target)&&!hamburger.contains(e.target)){
+    closeMob();
+  }
+});
+</script>
+</body>
+</html>
