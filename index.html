@@ -701,7 +701,7 @@ footer{background:var(--p900);padding:52px 0 0;}
       <button class="nav-link" onclick="scrollTo('about')">About</button>
     </div>
     <div class="nav-right">
-      <button class="nav-phone" onclick="scrollTo('booking')" style="background:transparent;border:none;font-size:13px;font-weight:500;padding:0;cursor:pointer;">Book a visit</button>
+      <button class="nav-phone" onclick="scrollTo('booking')" style="background:transparent;border:none;font-size:13px;font-weight:500;padding:0;cursor:pointer;">Get a quote</button>
       <a class="nav-cta" href="tel:+18326107302" style="display:flex;align-items:center;gap:6px;text-decoration:none;">
         <svg width="13" height="13" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>
         Call Now
@@ -720,7 +720,7 @@ footer{background:var(--p900);padding:52px 0 0;}
   <button onclick="scrollTo('smart');closeMob()">Smart Upgrade</button>
   <button onclick="scrollTo('about');closeMob()">About</button>
   <a href="tel:+18326107302" onclick="closeMob()">📞 Call Now</a>
-  <button class="mob-cta" onclick="scrollTo('booking');closeMob()">Book a visit</button>
+  <button class="mob-cta" onclick="scrollTo('booking');closeMob()">Get a quote</button>
 </div>
 
 <!-- HERO -->
@@ -746,7 +746,7 @@ footer{background:var(--p900);padding:52px 0 0;}
             <a class="btn-pri" href="tel:+18326107302" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;">
               <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>Call Now
             </a>
-            <button class="btn-out" onclick="scrollTo('booking')">Book a Free Visit</button>
+            <button class="btn-out" onclick="scrollTo('booking')">Get a quote</button>
           </div>
           <div class="trust-row">
             <span class="trust-item"><span class="trust-dot"></span>TCEQ Licensed</span>
@@ -1014,7 +1014,7 @@ footer{background:var(--p900);padding:52px 0 0;}
             <div style="font-size:13px;color:var(--gray700);display:flex;gap:8px;"><span style="color:var(--p500);">→</span> $30 off for Happy Pro subscribers</div>
           </div>
         </div>
-        <button class="btn-pri" onclick="scrollTo('booking')" style="width:100%;">Book a Rachio install</button>
+        <button class="btn-pri" onclick="scrollTo('booking')" style="width:100%;">Get a quote</button>
       </div>
     </div>
   </div>
@@ -1058,7 +1058,7 @@ footer{background:var(--p900);padding:52px 0 0;}
     <h2 class="cta-band-title">Book your first visit today.<br>We'll confirm within 2 hours.</h2>
     <p class="cta-band-sub">Same-day and next-day availability. No pressure, no contracts. Just your sprinklers fixed right.</p>
     <div class="cta-band-btns">
-      <button class="btn-pri" onclick="scrollTo('booking')">Book a free visit</button>
+      <button class="btn-pri" onclick="scrollTo('booking')">Get a quote</button>
       <a class="btn-out" href="tel:+18326107302" style="padding:13px 26px;border-radius:50px;border:1px solid rgba(127,119,221,.4);color:var(--p700);font-size:15px;display:inline-block;">Call Now</a>
     </div>
   </div>
@@ -1167,18 +1167,26 @@ footer{background:var(--p900);padding:52px 0 0;}
           <p class="booking-form-sub">Pick a date and time. We'll confirm your window within 2 hours.</p>
           <!-- REPLACE WITH YOUR GOHIGHLEVEL CALENDAR EMBED -->
           <!-- <iframe src="https://api.leadconnectorhq.com/widget/booking/YOUR_ID" style="width:100%;border:none;min-height:500px;"></iframe> -->
-          <div class="ghl-wrap">
-            <div class="ghl-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="4" width="18" height="18" rx="2" stroke="#AFA9EC" stroke-width="1.5"/>
-                <path d="M3 9h18M8 2v4M16 2v4" stroke="#AFA9EC" stroke-width="1.5" stroke-linecap="round"/>
-                <rect x="7" y="13" width="3" height="3" rx=".5" fill="#AFA9EC" opacity=".5"/>
-              </svg>
-            </div>
-            <div class="ghl-title">Calendar Booking Widget</div>
-            <p class="ghl-sub">Replace this block with your calendar booking widget embed code</p>
-            <div class="ghl-code">&lt;!-- Calendar Widget --&gt;</div>
-            <button class="btn-pri" style="margin-top:12px;font-size:13px;padding:10px 22px;" onclick="showConfirm()">Preview confirmation →</button>
+          <div class="ghl-wrap" style="padding:0;background:transparent;border:none;">
+            <iframe
+                src="https://api.nexum23.com/widget/form/q9zoFW54XisreYpU5oOq"
+                style="width:100%;height:100%;border:none;border-radius:3px"
+                id="inline-q9zoFW54XisreYpU5oOq" 
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Contact Us HappySprinklers"
+                data-height="432"
+                data-layout-iframe-id="inline-q9zoFW54XisreYpU5oOq"
+                data-form-id="q9zoFW54XisreYpU5oOq"
+                title="Contact Us HappySprinklers"
+                    >
+            </iframe>
+            <script src="https://api.nexum23.com/js/form_embed.js"></script>
           </div>
         </div>
 
@@ -1236,7 +1244,7 @@ footer{background:var(--p900);padding:52px 0 0;}
       <div>
         <p class="footer-col-title">Company</p>
         <span class="footer-link" onclick="scrollTo('about')">About us</span>
-        <span class="footer-link" onclick="scrollTo('booking')">Book a visit</span>
+        <span class="footer-link" onclick="scrollTo('booking')">Get a quote</span>
         <span class="footer-link" onclick="scrollTo('plans')">Pricing</span>
         <a class="footer-link" href="tel:+18326107302">Call Now</a>
       </div>
@@ -1256,7 +1264,7 @@ footer{background:var(--p900);padding:52px 0 0;}
   </a>
   <button class="sticky-book" onclick="scrollTo('booking')">
     <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="14" rx="2" stroke="white" stroke-width="1.5"/><path d="M3 8h14M8 2v4M12 2v4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
-    Book a Visit
+    Get a quote
   </button>
 </div>
 
