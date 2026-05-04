@@ -782,11 +782,11 @@ footer{background:var(--p900);padding:52px 0 0;}
 </section>
 
 <!-- STATS BAR -->
-<div class="stats-bar">
+<div class="stats-bar" id="stats-bar">
   <div class="stat-item"><div class="stat-n" id="odo-repairs">0</div><div class="stat-l">Repairs completed</div></div>
-  <div class="stat-item"><div class="stat-n">Same</div><div class="stat-l">Day scheduling</div></div>
-  <div class="stat-item"><div class="stat-n">2hr</div><div class="stat-l">Visit confirmed by</div></div>
-  <div class="stat-item"><div class="stat-n">5★</div><div class="stat-l">Google rating</div></div>
+  <div class="stat-item"><div class="stat-n" id="odo-same"></div><div class="stat-l">Day scheduling</div></div>
+  <div class="stat-item"><div class="stat-n" id="odo-visit">0</div><div class="stat-l">Visit confirmed by</div></div>
+  <div class="stat-item"><div class="stat-n" id="odo-rating">0</div><div class="stat-l">Google rating</div></div>
 </div>
 
 <!-- SERVICES -->
@@ -1285,8 +1285,9 @@ function showConfirm(){
   confirm.classList.add('visible');
 }
 
-// Odometer animation for 500+ repairs stat
+// Odometer animation for stats bar
 function animateOdometer(el, target, duration, suffix){
+  if(!el) return;
   var start=0;
   var startTime=null;
   var easeOut=function(t){return 1-Math.pow(1-t,3);};
@@ -1302,18 +1303,49 @@ function animateOdometer(el, target, duration, suffix){
 }
 
 // Trigger odometer when stats bar enters viewport
-var odoEl=document.getElementById('odo-repairs');
+var statsBar=document.getElementById('stats-bar');
 var odoFired=false;
 var observer=new IntersectionObserver(function(entries){
   entries.forEach(function(entry){
     if(entry.isIntersecting && !odoFired){
       odoFired=true;
-      animateOdometer(odoEl, 500, 1800, '+');
+      animateOdometer(document.getElementById('odo-repairs'), 500, 1800, '+');
+      animateOdometer(document.getElementById('odo-visit'), 2, 1800, 'hr');
+      animateOdometer(document.getElementById('odo-rating'), 5, 1800, '★');
+      
+      // Text scramble for "Same"
+      var sameEl = document.getElementById('odo-same');
+      if(sameEl) {
+        var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var text = 'Same';
+        var duration = 1800;
+        var startTime = null;
+        function scramble(timestamp) {
+          if(!startTime) startTime = timestamp;
+          var progress = Math.min((timestamp - startTime) / duration, 1);
+          if (progress === 1) {
+            sameEl.textContent = text;
+          } else {
+            var curr = '';
+            for(var i=0; i<text.length; i++) {
+              if (progress > (i+1)/text.length) {
+                curr += text[i];
+              } else {
+                curr += chars[Math.floor(Math.random() * chars.length)];
+              }
+            }
+            sameEl.textContent = curr;
+            requestAnimationFrame(scramble);
+          }
+        }
+        requestAnimationFrame(scramble);
+      }
+      
       observer.disconnect();
     }
   });
 },{threshold:0.5});
-if(odoEl) observer.observe(odoEl);
+if(statsBar) observer.observe(statsBar);
 
 // Nav active state on scroll
 var sections=['services','plans','smart','about','booking'];
