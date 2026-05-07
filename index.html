@@ -734,13 +734,13 @@ footer{background:var(--p900);padding:52px 0 0;}
       <div class="nav-brand-text">Happy <span>Sprinklers</span></div>
     </div>
     <div class="nav-links">
-      <button class="nav-link" onclick="scrollTo('services')">Services</button>
-      <button class="nav-link" onclick="scrollTo('plans')">Happy Plan</button>
-      <button class="nav-link" onclick="scrollTo('smart')">Smart Upgrade</button>
-      <button class="nav-link" onclick="scrollTo('about')">About</button>
+      <button class="nav-link" onclick="scrollToSection('services')">Services</button>
+      <button class="nav-link" onclick="scrollToSection('plans')">Happy Plan</button>
+      <button class="nav-link" onclick="scrollToSection('smart')">Smart Upgrade</button>
+      <button class="nav-link" onclick="scrollToSection('about')">About</button>
     </div>
     <div class="nav-right">
-      <button class="nav-out" onclick="scrollTo('booking')">Get a quote</button>
+      <button class="nav-out" onclick="scrollToSection('booking')">Get a quote</button>
       <a class="nav-cta" href="tel:+18326107302" style="display:flex;align-items:center;gap:6px;text-decoration:none;">
         <svg width="13" height="13" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>
         Call Now
@@ -754,12 +754,12 @@ footer{background:var(--p900);padding:52px 0 0;}
 
 <!-- MOBILE MENU -->
 <div class="mob-menu" id="mobMenu">
-  <button onclick="scrollTo('services');closeMob()">Services</button>
-  <button onclick="scrollTo('plans');closeMob()">Happy Plan</button>
-  <button onclick="scrollTo('smart');closeMob()">Smart Upgrade</button>
-  <button onclick="scrollTo('about');closeMob()">About</button>
+  <button onclick="scrollToSection('services');closeMob()">Services</button>
+  <button onclick="scrollToSection('plans');closeMob()">Happy Plan</button>
+  <button onclick="scrollToSection('smart');closeMob()">Smart Upgrade</button>
+  <button onclick="scrollToSection('about');closeMob()">About</button>
   <a href="tel:+18326107302" onclick="closeMob()">📞 Call Now</a>
-  <button class="mob-cta" onclick="scrollTo('booking');closeMob()">Get a quote</button>
+  <button class="mob-cta" onclick="scrollToSection('booking');closeMob()">Get a quote</button>
 </div>
 
 <!-- HERO -->
@@ -785,7 +785,7 @@ footer{background:var(--p900);padding:52px 0 0;}
             <a class="btn-pri" href="tel:+18326107302" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;">
               <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>Call Now
             </a>
-            <button class="btn-out" onclick="scrollTo('booking')">Get a quote</button>
+            <button class="btn-out" onclick="scrollToSection('booking')">Get a quote</button>
           </div>
           <div class="trust-row">
             <span class="trust-item"><span class="trust-dot"></span>TCEQ Licensed</span>
@@ -973,7 +973,7 @@ footer{background:var(--p900);padding:52px 0 0;}
         </ul>
         <div class="plan-spacer"></div>
         <div class="plan-discount" style="background:#EAF3DE;color:#27500A;">10% off all repairs</div>
-        <button class="plan-cta" onclick="scrollTo('booking')">Get started</button>
+        <button class="plan-cta" onclick="scrollToSection('booking')">Get started</button>
       </div>
 
       <div class="pcard feat">
@@ -995,7 +995,7 @@ footer{background:var(--p900);padding:52px 0 0;}
         </ul>
         <div class="plan-spacer"></div>
         <div class="plan-discount" style="background:#EEEDFE;color:#3C3489;">15% off all repairs</div>
-        <button class="plan-cta" onclick="scrollTo('booking')">Choose Happy Plus</button>
+        <button class="plan-cta" onclick="scrollToSection('booking')">Choose Happy Plus</button>
       </div>
 
       <div class="pcard">
@@ -1016,7 +1016,7 @@ footer{background:var(--p900);padding:52px 0 0;}
         </ul>
         <div class="plan-spacer"></div>
         <div class="plan-discount" style="background:#E1F5EE;color:#085041;">20% off all repairs</div>
-        <button class="plan-cta" onclick="scrollTo('booking')">Get started</button>
+        <button class="plan-cta" onclick="scrollToSection('booking')">Get started</button>
       </div>
 
     </div>
@@ -1074,7 +1074,7 @@ footer{background:var(--p900);padding:52px 0 0;}
             <div style="font-size:13px;color:var(--gray700);display:flex;gap:8px;"><span style="color:var(--p500);">→</span> $30 off for Happy Pro subscribers</div>
           </div>
         </div>
-        <button class="btn-pri" onclick="scrollTo('booking')" style="width:100%;">Get a quote</button>
+        <button class="btn-pri" onclick="scrollToSection('booking')" style="width:100%;">Get a quote</button>
       </div>
     </div>
   </div>
@@ -1118,7 +1118,7 @@ footer{background:var(--p900);padding:52px 0 0;}
     <h2 class="cta-band-title">Book your first visit today.<br>We'll confirm within 2 hours.</h2>
     <p class="cta-band-sub">Same-day and next-day availability. No pressure, no contracts. Just your sprinklers fixed right.</p>
     <div class="cta-band-btns">
-      <button class="btn-pri" onclick="scrollTo('booking')">Get a quote</button>
+      <button class="btn-pri" onclick="scrollToSection('booking')">Get a quote</button>
       <a class="btn-out" href="tel:+18326107302" style="padding:13px 26px;border-radius:50px;border:1px solid rgba(127,119,221,.4);color:var(--p700);font-size:15px;display:inline-block;">Call Now</a>
     </div>
   </div>
@@ -1300,17 +1300,17 @@ footer{background:var(--p900);padding:52px 0 0;}
       </div>
       <div>
         <p class="footer-col-title">Services</p>
-        <span class="footer-link" onclick="scrollTo('services')">Sprinkler repair</span>
-        <span class="footer-link" onclick="scrollTo('services')">Seasonal maintenance</span>
-        <span class="footer-link" onclick="scrollTo('smart')">Rachio smart upgrade</span>
-        <span class="footer-link" onclick="scrollTo('services')">Realtor inspections</span>
-        <span class="footer-link" onclick="scrollTo('plans')">Happy Plan</span>
+        <span class="footer-link" onclick="scrollToSection('services')">Sprinkler repair</span>
+        <span class="footer-link" onclick="scrollToSection('services')">Seasonal maintenance</span>
+        <span class="footer-link" onclick="scrollToSection('smart')">Rachio smart upgrade</span>
+        <span class="footer-link" onclick="scrollToSection('services')">Realtor inspections</span>
+        <span class="footer-link" onclick="scrollToSection('plans')">Happy Plan</span>
       </div>
       <div>
         <p class="footer-col-title">Company</p>
-        <span class="footer-link" onclick="scrollTo('about')">About us</span>
-        <span class="footer-link" onclick="scrollTo('booking')">Get a quote</span>
-        <span class="footer-link" onclick="scrollTo('plans')">Pricing</span>
+        <span class="footer-link" onclick="scrollToSection('about')">About us</span>
+        <span class="footer-link" onclick="scrollToSection('booking')">Get a quote</span>
+        <span class="footer-link" onclick="scrollToSection('plans')">Pricing</span>
         <a class="footer-link" href="tel:+18326107302">Call Now</a>
       </div>
     </div>
@@ -1327,7 +1327,7 @@ footer{background:var(--p900);padding:52px 0 0;}
     <svg width="15" height="15" viewBox="0 0 20 20" fill="none"><path d="M3 3h4l2 5-2.5 1.5a11 11 0 005 5L13 12l5 2v4a2 2 0 01-2 2C6 20 0 14 0 5a2 2 0 012-2h1z" fill="white"/></svg>
     Call Now
   </a>
-  <button class="sticky-book" onclick="scrollTo('booking')">
+  <button class="sticky-book" onclick="scrollToSection('booking')">
     <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="14" rx="2" stroke="white" stroke-width="1.5"/><path d="M3 8h14M8 2v4M12 2v4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
     Get a quote
   </button>
@@ -1335,7 +1335,7 @@ footer{background:var(--p900);padding:52px 0 0;}
 
 <script>
 // Smooth scroll to section
-function scrollTo(id){
+function scrollToSection(id){
   var el=document.getElementById(id);
   if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}
 }
